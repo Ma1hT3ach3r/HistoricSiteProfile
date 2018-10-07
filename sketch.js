@@ -22,11 +22,12 @@ function setup() {
 
 
   var config = {
-    apiKey: [YOUR_API_KEY],
-    authDomain: "my-not-awesome-project.firebaseapp.com",
-    databaseURL: "https://my-not-awesome-project.firebaseio.com",
-    storageBucket: "my-not-awesome-project.appspot.com",
-    messagingSenderId: "583703514528"
+  apiKey: "AIzaSyBGtyqp75py4dSJwR6P7sMfF4kOpuW5Dcc",
+    authDomain: "historic-profile-exemplar.firebaseapp.com",
+    databaseURL: "https://historic-profile-exemplar.firebaseio.com",
+    projectId: "historic-profile-exemplar",
+    storageBucket: "",
+    messagingSenderId: "200048503418"
   };
   firebase.initializeApp(config);
   database = firebase.database();
