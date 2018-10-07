@@ -1,14 +1,10 @@
 var database;
-
 var drawing = [];
 var currentPath = [];
 var isDrawing = false;
 
 function setup() {
   canvas = createCanvas(200, 200);
-
-
-
   canvas.mousePressed(startPath);
   canvas.parent('canvascontainer');
   canvas.mouseReleased(endPath);
@@ -18,8 +14,6 @@ function setup() {
 
   var clearButton = select('#clearButton');
   clearButton.mousePressed(clearDrawing);
-
-
 
   var config = {
   apiKey: "AIzaSyBGtyqp75py4dSJwR6P7sMfF4kOpuW5Dcc",
@@ -38,7 +32,6 @@ function setup() {
     console.log(params.id);
     showDrawing(params.id);
   }
-
 
   var ref = database.ref('drawings');
   ref.on('value', gotData, errData);
