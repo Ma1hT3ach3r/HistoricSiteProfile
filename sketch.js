@@ -20,10 +20,11 @@ function setup() {
     authDomain: "historic-profile-exemplar.firebaseapp.com",
     databaseURL: "https://historic-profile-exemplar.firebaseio.com",
     projectId: "historic-profile-exemplar",
-    storageBucket: "",
+    storageBucket: "historic-profile-exemplar.appspot.com",
     messagingSenderId: "200048503418"
   };
   firebase.initializeApp(config);
+ 
   database = firebase.database();
 
   var params = getURLParams();
